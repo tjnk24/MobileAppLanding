@@ -1,0 +1,38 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        ["env", {
+          "debug": true,
+          "modules": false,
+          "targets": { "browsers": "ie >= 10" },
+          "include": ["transform-es2015-classes"],
+          "useBuiltIns": true
+        }],
+        "stage-1"
+      ],
+      "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread",
+        "transform-es5-property-mutators"
+      ]
+    },
+    "production": {
+      "presets": [
+        ["env", {
+          "debug": false,
+          "modules": false,
+          "targets": { "browsers": "ie >= 10" },
+          "include": ["transform-es2015-classes"],
+          "useBuiltIns": true
+        }],
+        "stage-1"
+      ],
+      "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread",
+        "transform-es5-property-mutators"
+      ]
+    }
+  }
+}

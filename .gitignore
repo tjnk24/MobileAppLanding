@@ -1,0 +1,7 @@
+.*/
+.idea/
+node_modules/
+build/
+source_psd/
+yarn-error.log
+yarn.lock
